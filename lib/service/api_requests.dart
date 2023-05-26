@@ -32,9 +32,8 @@ class AuthService {
     print(data);
 
     try {
-      if (data != '' && data['payload'] != '') {
-        String accessTokenJson =
-            AuthJson.fromJson(data['payload']).payload.accessToken;
+      if (data != '' && data['payload'] != {}) {
+        String accessTokenJson = AuthJson.fromJson(data).payload.accessToken;
         await prefs.setString('token', accessTokenJson);
         _token = accessTokenJson;
         return 'Token: ${accessTokenJson}';
@@ -64,8 +63,7 @@ class AuthService {
 
     try {
       if (data != '' && data['payload'] != '') {
-        String accessTokenJson =
-            AuthJson.fromJson(data['payload']).payload.accessToken;
+        String accessTokenJson = AuthJson.fromJson(data).payload.accessToken;
 
         await prefs.setString('token', accessTokenJson);
         _token = accessTokenJson;

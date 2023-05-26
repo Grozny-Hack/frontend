@@ -32,6 +32,14 @@
 		<data>
 		EcefiyTk12Xv5DGuKg0AR0ANtEs=
 		</data>
+		<key>flutter_assets/assets/icons/credit-card.png</key>
+		<data>
+		KF+nFT2yN4WyG19EzwUE0GRwEMw=
+		</data>
+		<key>flutter_assets/assets/icons/home.png</key>
+		<data>
+		mMBOp07apTegl1Je48EIgxN08rw=
+		</data>
 		<key>flutter_assets/assets/icons/home_page/apple.png</key>
 		<data>
 		isQCeU+LH+uHhx1BWgbb8hV3IGw=
@@ -59,6 +67,10 @@
 		<key>flutter_assets/assets/images/.DS_Store</key>
 		<data>
 		l/dcGWbqd36gPJ6xvQKKjVT/wfA=
+		</data>
+		<key>flutter_assets/assets/images/CreditCard.zip</key>
+		<data>
+		z8JH50WYTCG8zHdfPJd6ppejGK0=
 		</data>
 		<key>flutter_assets/assets/images/berries/apricot.jpg</key>
 		<data>
@@ -180,6 +192,10 @@
 		<data>
 		8KO0JCwY0ohrqEjmztHit/2VNXQ=
 		</data>
+		<key>flutter_assets/assets/images/profilepage.png</key>
+		<data>
+		ndcz6RwVSnZ1j57XX/dSWj3fKJw=
+		</data>
 		<key>flutter_assets/assets/images/vegetables/cucumber.jpg</key>
 		<data>
 		YYk0bgUa3K76s2g2yaPNWu3KQoQ=
@@ -191,6 +207,10 @@
 		<key>flutter_assets/assets/images/vegetables/potato.jpg</key>
 		<data>
 		xFoBXGy33gLH5aLoIMVeXMh3v5E=
+		</data>
+		<key>flutter_assets/assets/images/vegetables/salat.png</key>
+		<data>
+		7IR0EWn2BmOJewv7CMEQFqTOYvE=
 		</data>
 		<key>flutter_assets/assets/images/vegetables/shopping-cart.png</key>
 		<data>
@@ -210,7 +230,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		Lx2wax1PHeP6ha8nUgJK/Wn8HUE=
+		wEwqM+63IB6W7sz/cD0S8lP6iUk=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -262,6 +282,20 @@
 			auokGx2l4en8PpNPKtG7gObDoxuKO0UkpaDdHNkNU40=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/icons/credit-card.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WpEC1VcZu7KCvzxhOJvPaRTc+I5vasB4mbhQIIE6GdA=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/icons/home.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EocQw8No+21YyNDQEIkH8DxdHurNChVB7E6anNeH4Fk=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/icons/home_page/apple.png</key>
 		<dict>
 			<key>hash2</key>
@@ -302,6 +336,13 @@
 			<key>hash2</key>
 			<data>
 			VPk6R+cCgS7JNlIooOPOm6/AsPFpHs6oUWvk4drdqUA=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/CreditCard.zip</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A7UKY2FLvHAGBzluER1zyqBeT21TEVZcRxAXiFtJf9I=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/berries/apricot.jpg</key>
@@ -514,6 +555,13 @@
 			tS77hGxc1xLnWvojmk74Cf60+sWgdTgU8H4Sv7EDoJE=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/profilepage.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p/Jj0svw8JB/6uTHL8GPXIINMsOLDQCTV+YqvvGdvBA=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/vegetables/cucumber.jpg</key>
 		<dict>
 			<key>hash2</key>
@@ -533,6 +581,13 @@
 			<key>hash2</key>
 			<data>
 			lYW7MN+wTyH91CTyNXvqQ0JphEqDwJHBgSNzR77n+yQ=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/vegetables/salat.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			x2X6lGR2FtaoGlwS9HaLJO0V46gDUaHcRKEfmDteTqc=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/vegetables/shopping-cart.png</key>
@@ -567,7 +622,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h8nqVw1k0Xp3Bp7z4b9zyA3qJ7JbwNoUuLvxGiTcUZE=
+			9hkEKFUQJVU+p8uVj3yhMUy8i3bwIfaSNveCCoLh3BY=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
