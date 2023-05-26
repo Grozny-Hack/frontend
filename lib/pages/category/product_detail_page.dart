@@ -29,26 +29,34 @@ class ProductDetailPage extends StatelessWidget {
           const SizedBox(height: 20,),
 
           Container(
-            height: 48,
+            height: 50,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(27),
-              color: Colors.white,
-              border: Border.all(color: const Color(0xffD9D0E3))
-            ),
+                borderRadius: BorderRadius.circular(27),
+                color: Colors.white,
+                border: Border.all(color: const Color(0xffD9D0E3))),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: const [
                 TextField(
-                  cursorColor: Colors.red,
+                  cursorColor: Colors.green,
                   // controller: _textMailSubjectController,
                   textCapitalization: TextCapitalization.sentences,
                   maxLines: 1,
-                  style: TextStyle(
-                      fontWeight: FontWeight.w400, fontSize: 14),
+                  textAlignVertical: TextAlignVertical.center,
+                  style: TextStyle(fontWeight: FontWeight.w300, fontSize: 17),
                   decoration: InputDecoration(
-                    isCollapsed: true,
-                    contentPadding: EdgeInsets.all(10),
-                    border: InputBorder.none,
-                  ),
+                      hintText: 'Поиск',
+                      hintStyle: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w300,
+                      ),
+                      isCollapsed: true,
+                      contentPadding: EdgeInsets.all(10),
+                      border: InputBorder.none,
+                      prefixIcon: Icon(
+                        Icons.search_rounded,
+                        color: Colors.black,
+                      )),
                 ),
               ],
             ),
