@@ -52,82 +52,70 @@ abstract class PageContent {
 
   static const List<Map> contentBread = [
     {
-      'title': '-----',
-      'price': '---',
+      'title': 'Мука',
+      'price': '90',
       'pageRoute': '',
-      'imagePath': A.potato,
+      'imagePath': A.flour,
     },
     {
-      'title': '-----',
-      'price': '---',
+      'title': 'Ржаной хлеб',
+      'price': '35',
       'pageRoute': '',
-      'imagePath': A.potato,
+      'imagePath': A.bread2,
     },
     {
-      'title': '-----',
-      'price': '---',
+      'title': 'Черный хлеб',
+      'price': '42',
       'pageRoute': '',
-      'imagePath': A.potato,
-    },
-    {
-      'title': '-----',
-      'price': '---',
-      'pageRoute': '',
-      'imagePath': A.potato,
+      'imagePath': A.bread1,
     },
   ];
 
   static const List<Map> contentBerries = [
     {
-      'title': '-----',
-      'price': '---',
+      'title': 'Абрикосы',
+      'price': '130',
       'pageRoute': '',
-      'imagePath': A.potato,
+      'imagePath': A.apricot,
     },
     {
-      'title': '-----',
-      'price': '---',
+      'title': 'Арбус',
+      'price': '65',
       'pageRoute': '',
-      'imagePath': A.potato,
+      'imagePath': A.watermelon,
     },
     {
-      'title': '-----',
-      'price': '---',
+      'title': 'Ежевика',
+      'price': '310',
       'pageRoute': '',
-      'imagePath': A.potato,
+      'imagePath': A.blackberry,
     },
     {
-      'title': '-----',
-      'price': '---',
+      'title': 'Гранат',
+      'price': '210',
       'pageRoute': '',
-      'imagePath': A.potato,
+      'imagePath': A.granat,
     },
   ];
 
   static const List<Map> contentMilk = [
     {
-      'title': '-----',
-      'price': '---',
+      'title': 'Молоко',
+      'price': '51',
       'pageRoute': '',
-      'imagePath': A.potato,
+      'imagePath': A.milk,
     },
     {
-      'title': '-----',
-      'price': '---',
+      'title': 'Сыр',
+      'price': '420',
       'pageRoute': '',
-      'imagePath': A.potato,
+      'imagePath': A.cheese,
     },
     {
-      'title': '-----',
-      'price': '---',
+      'title': 'Творог',
+      'price': '260',
       'pageRoute': '',
-      'imagePath': A.potato,
-    },
-    {
-      'title': '-----',
-      'price': '---',
-      'pageRoute': '',
-      'imagePath': A.potato,
+      'imagePath': A.curd,
     },
   ];
 
