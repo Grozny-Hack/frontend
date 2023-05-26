@@ -18,7 +18,6 @@ class CategoriesPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
           const SizedBox(height: 42,),
-          CloseCircleButton(onTap: (){context.pop();}),
           const SizedBox(height: 20,),
 
           const Text('Категории', style: TextStyle(fontSize: 34, fontWeight: FontWeight.w700),),
