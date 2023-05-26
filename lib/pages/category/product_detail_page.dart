@@ -68,7 +68,7 @@ class ProductDetailPage extends StatelessWidget {
           ListView.builder(
             physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
-            itemCount: 4,//content?.length,
+            itemCount: content?.length,
             itemBuilder: (BuildContext context, int index) {
               String productName = content?[index]['title'];
               String price = content?[index]['price'];
