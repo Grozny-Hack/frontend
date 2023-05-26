@@ -10,6 +10,12 @@ class AppColors {
   static const Color colorF8F8F8 = Color(0xffF8F8F8);
   static const Color color9586A8 = Color(0xff9586A8);
   static const Color color7203FF = Color(0xff7203FF);
+  static const Color color4AB7B6 = Color(0xff4AB7B6);
+  static const Color color4B9DCB = Color(0xff4B9DCB);
+  static const Color colorAF558B = Color(0xffAF558B);
+  static const Color colorA187D9 = Color(0xffA187D9);
+   static const Color colorF6F5F5 = Color(0xffF6F5F5);
+
   
   static const String comfora = 'Comfortaa';
   static const String nunito = 'Nunito';

@@ -7,6 +7,8 @@ abstract class Routes {
   static const String category = '/category';
   static const String basket = '/basket';
   static const String profile = '/profile';
+
+    static const String isaChatPage = "/isaChatPage";
 }
 
 enum MenuRoute {

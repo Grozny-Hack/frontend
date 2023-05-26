@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_simple_dependency_injection/injector.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mobile_app/pages/category/category_page.dart';
+import 'package:mobile_app/pages/isa_chat/isa_chat.dart';
 
 import 'pages/auth/sign_in_page.dart';
 import 'pages/auth/sign_up_page.dart';
@@ -65,6 +66,15 @@ class MyApp extends StatelessWidget {
                     NoTransitionPage(child: ProfilePage()),
               ),
             ],
+          ),
+          GoRoute(
+            parentNavigatorKey: _rootNavigatorKey,
+            path: Routes.isaChatPage,
+            pageBuilder: (context, state) => buildPageWithPopupTransition<void>(
+              context: context,
+              state: state,
+              child: IsaChatPage(),
+            ),
           ),
           GoRoute(
             parentNavigatorKey: _rootNavigatorKey,
