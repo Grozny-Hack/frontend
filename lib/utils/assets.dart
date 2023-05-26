@@ -24,4 +24,20 @@ abstract class A {
   static const String lime = 'assets/images/fruits/lime.jpg';
   static const String mango = 'assets/images/fruits/mango.jpg';
   
+  //bread
+  static const String bread1 = 'assets/images/bread/bread1.jpg';
+  static const String bread2 = 'assets/images/bread/bread2.jpg';
+  static const String flour = 'assets/images/bread/flour.jpg';
+
+  //milk
+  static const String cheese = 'assets/images/milk/cheese1.jpg';
+  static const String milk = 'assets/images/milk/milk.jpg';
+  static const String curd = 'assets/images/milk/curd.jpg';
+
+  //berries
+  static const String apricot = 'assets/images/berries/apricot.jpg';
+  static const String blackberry = 'assets/images/berries/blackberry.jpg';
+  static const String watermelon = 'assets/images/berries/watermelon.jpg';
+  static const String granat = 'assets/images/berries/granat.jpg';
+
 }
