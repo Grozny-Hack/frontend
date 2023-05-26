@@ -31,28 +31,22 @@ abstract class PageContent {
 
   static const List<Map> contentFruits = [
     {
-      'title': '-----',
-      'price': '---',
+      'title': 'Ананас',
+      'price': '310',
       'pageRoute': '',
-      'imagePath': A.potato,
+      'imagePath': A.ananas,
     },
     {
-      'title': '-----',
-      'price': '---',
+      'title': 'Лайм',
+      'price': '170',
       'pageRoute': '',
-      'imagePath': A.potato,
+      'imagePath': A.lime,
     },
     {
-      'title': '-----',
-      'price': '---',
+      'title': 'Манго',
+      'price': '350',
       'pageRoute': '',
-      'imagePath': A.potato,
-    },
-    {
-      'title': '-----',
-      'price': '---',
-      'pageRoute': '',
-      'imagePath': A.potato,
+      'imagePath': A.mango,
     },
   ];
 
