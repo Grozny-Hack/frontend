@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mobile_app/utils/app_routes.dart';
 
-import '../../ui/closeButton.dart';
 
 class CategoriesPage extends StatelessWidget {
   const CategoriesPage({super.key});
@@ -17,7 +16,6 @@ class CategoriesPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
           const SizedBox(height: 42,),
-          CloseCircleButton(onTap: (){context.pop();}),
           const SizedBox(height: 20,),
 
           const Text('Категории', style: TextStyle(fontSize: 34, fontWeight: FontWeight.w700),),
