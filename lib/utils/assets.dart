@@ -18,5 +18,10 @@ abstract class A {
   static const String beaf3 = 'assets/images/meat/beaf3.jpg';
   static const String chicken1 = 'assets/images/meat/chicken1.jpg';
   static const String chicken2 = 'assets/images/meat/chicken2.jpg';
+
+  //fruits
+  static const String ananas = 'assets/images/fruits/ananas.jpg';
+  static const String lime = 'assets/images/fruits/lime.jpg';
+  static const String mango = 'assets/images/fruits/mango.jpg';
   
 }
