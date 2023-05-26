@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 class APIService {
-  static const url = '';
+  static const url = 'http://192.168.88.153:8069';
 
   static Future<dynamic> postRequest(
       {required String request,

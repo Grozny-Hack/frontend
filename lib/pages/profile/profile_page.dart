@@ -30,17 +30,18 @@ class ProfilePage extends StatelessWidget {
           builder: (context, state) {
             return SafeArea(
               child: Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 15.0, vertical: 50),
+                padding: const EdgeInsets.symmetric(horizontal: 10.0),
                 child: Column(
                   children: [
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(
-                          Icons.edit,
-                          size: 30,
-                          color: AppColors.color7e56e8,
+                        Text(
+                          'Профиль',
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
                       ],
                     ),
@@ -48,21 +49,43 @@ class ProfilePage extends StatelessWidget {
                       height: 20,
                     ),
                     CircleAvatar(
-                      backgroundColor: Colors.amber,
-                      child: Icon(Icons.person,
-                          size: 30, color: AppColors.color7e56e8),
-                      radius: 150.0,
+                      backgroundColor: AppColors.color0BCE83,
+                      child: Icon(
+                        Icons.person,
+                        size: 30,
+                        color: Colors.white,
+                      ),
+                      radius: 50.0,
                     ),
                     SizedBox(
                       height: 20,
                     ),
                     Text(
                       '@$username',
-                      style:
-                          TextStyle(fontSize: 20, fontFamily: AppColors.nunito),
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: AppColors.nunito,
+                      ),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 10,
+                    ),
+                    Text(
+                      'Катерина Баюк',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: AppColors.nunito,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      'Катерина Баюк',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: AppColors.nunito,
+                      ),
                     ),
                     SizedBox(
                       height: 10,

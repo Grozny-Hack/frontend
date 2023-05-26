@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:mobile_app/utils/app_colors.dart';
 
 import '../../service/api_requests.dart';
+import '../../ui/closeButton.dart';
 import '../../utils/app_routes.dart';
 
 import 'package:flutter/cupertino.dart';
@@ -53,7 +54,7 @@ class _IsaChatPageState extends State<IsaChatPage> {
                           borderRadius: BorderRadius.circular(20),
                           color: (messages[index].messageType == "receiver"
                               ? Colors.grey.shade300
-                              : AppColors.color7e56e8),
+                              : AppColors.color0BCE83),
                         ),
                         padding: EdgeInsets.all(16),
                         child: Text(
@@ -82,7 +83,7 @@ class _IsaChatPageState extends State<IsaChatPage> {
                         height: 30,
                         width: 30,
                         decoration: BoxDecoration(
-                          color: AppColors.color7e56e8,
+                          color: AppColors.color0BCE83,
                           borderRadius: BorderRadius.circular(30),
                         ),
                         child: Icon(
@@ -118,7 +119,7 @@ class _IsaChatPageState extends State<IsaChatPage> {
                         color: Colors.white,
                         size: 18,
                       ),
-                      backgroundColor: AppColors.color7e56e8,
+                      backgroundColor: AppColors.color0BCE83,
                       elevation: 0,
                     ),
                   ],
@@ -168,37 +169,40 @@ class _Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Column(
-        children: [
-          Stack(
-            children: [
-              Align(
-                alignment: Alignment.centerLeft,
-                child: IconButton(
-                  icon: Icon(Icons.arrow_left_rounded),
-                  onPressed: () {
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+        child: Column(
+          children: [
+            Stack(
+              children: [
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: CloseCircleButton(onTap: () {
                     context.pop();
-                  },
+                  }),
                 ),
-              ),
-              Align(
-                alignment: Alignment.center,
-                child: Text(
-                  'Чат с ассистентом Иса',
-                  style: TextStyle(
-                    fontFamily: 'VarelaRound',
-                    fontSize: 20,
+                Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    'Чат с ассистентом Иса',
+                    style: TextStyle(
+                      fontFamily: 'VarelaRound',
+                      fontSize: 20,
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
-          Container(
-            width: 100,
-            height: 100,
-            child: Image.asset(A.assetsHomePageIsaAvaImg),
-          ),
-        ],
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              child: Image.asset(A.assetsHomePageIsaAvaImg),
+            ),
+          ],
+        ),
       ),
     );
   }
