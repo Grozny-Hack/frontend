@@ -39,8 +39,39 @@ class _HomePageState extends State<HomePage> {
                   height: 20,
                 ),
                 Container(
-                  height: 48,
-                  color: Colors.grey.shade400,
+                  height: 50,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(27),
+                      color: Colors.white,
+                      border: Border.all(color: const Color(0xffD9D0E3))),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: const [
+                      TextField(
+                        cursorColor: Colors.green,
+                        // controller: _textMailSubjectController,
+                        textCapitalization: TextCapitalization.sentences,
+                        maxLines: 1,
+                        textAlignVertical: TextAlignVertical.center,
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 17),
+                        decoration: InputDecoration(
+                          hintText: 'Поиск',
+                          hintStyle: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w300,
+                          ),
+                          isCollapsed: true,
+                          contentPadding: EdgeInsets.all(10),
+                          border: InputBorder.none,
+                          prefixIcon: Icon(
+                            Icons.search_rounded,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -53,40 +84,6 @@ class _HomePageState extends State<HomePage> {
                     itemBuilder: (BuildContext context, int index) => _saleCard(
                       salesImgPaths[index],
                       salesImgRoutes[index],
-                    ),
-                    separatorBuilder: (BuildContext context, int index) =>
-                        const SizedBox(width: 10), // here the SizedBoxed
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  children: [
-                    Text(
-                      'Категории',
-                      style: TextStyle(),
-                    ),
-                    Spacer(),
-                    SizedBox(
-                      child: Icon(Icons.arrow_right),
-                    )
-                  ],
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                SizedBox(
-                  height: 109,
-                  child: ListView.separated(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 4,
-                    itemBuilder: (BuildContext context, int index) =>
-                        _categoryCard(
-                      categoryCardPaths[index],
-                      categoryCardRoutes[index],
-                      categoryCardTexts[index],
-                      categoryCardColor[index],
                     ),
                     separatorBuilder: (BuildContext context, int index) =>
                         const SizedBox(width: 10), // here the SizedBoxed
@@ -170,8 +167,48 @@ class _HomePageState extends State<HomePage> {
                 Row(
                   children: [
                     Text(
+                      'Категории',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    Spacer(),
+                    SizedBox(
+                      child: Icon(Icons.arrow_right),
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                SizedBox(
+                  height: 109,
+                  child: ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 4,
+                    itemBuilder: (BuildContext context, int index) =>
+                        _categoryCard(
+                      categoryCardPaths[index],
+                      categoryCardRoutes[index],
+                      categoryCardTexts[index],
+                      categoryCardColor[index],
+                    ),
+                    separatorBuilder: (BuildContext context, int index) =>
+                        const SizedBox(width: 10), // here the SizedBoxed
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  children: [
+                    Text(
                       'Мои подписки',
-                      style: TextStyle(),
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
                     Spacer(),
                     SizedBox(
@@ -197,11 +234,17 @@ class _HomePageState extends State<HomePage> {
                         const SizedBox(width: 10), // here the SizedBoxed
                   ),
                 ),
+                SizedBox(
+                  height: 20,
+                ),
                 Row(
                   children: [
                     Text(
                       'Заказы',
-                      style: TextStyle(),
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
                     Spacer(),
                     SizedBox(

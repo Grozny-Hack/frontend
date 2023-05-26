@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
               GoRoute(
                 path: Routes.home,
                 pageBuilder: (context, state) =>
-                    const NoTransitionPage(child: HomePage()),
+                    NoTransitionPage(child: HomePage()),
               ),
               GoRoute(
                 path: Routes.category,
