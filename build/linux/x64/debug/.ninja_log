@@ -1,0 +1,28 @@
+# ninja log v5
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/libflutter_linux_gtk.so	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_engine.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_value.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/fl_view.h	2a9efea4fdf63844
+0	30349	0	/home/anastation/Рабочий стол/frontend/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	2a9efea4fdf63844
+0	30349	0	flutter/_phony_	2a9efea4fdf63844
+30377	35622	1685110332389096555	CMakeFiles/mobile_app.dir/flutter/generated_plugin_registrant.cc.o	7b3fa5951dc01da2
+30366	35681	1685110332501094701	CMakeFiles/mobile_app.dir/main.cc.o	db51587e021fc98
+30376	35692	1685110332509094569	CMakeFiles/mobile_app.dir/my_application.cc.o	5c7826f139efa9d4
+35692	36814	1685110333641075859	intermediates_do_not_run/mobile_app	21dedacf3218bcdf
+36814	37622	0	CMakeFiles/install.util	3a5743ecf90b3cfb
