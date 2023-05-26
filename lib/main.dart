@@ -3,6 +3,8 @@ import 'package:flutter_simple_dependency_injection/injector.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mobile_app/pages/category/category_page.dart';
 import 'package:mobile_app/pages/isa_chat/isa_chat.dart';
+import 'package:mobile_app/pages/category/product_detail_page.dart';
+import 'package:mobile_app/utils/categories_pages_content.dart';
 
 import 'pages/auth/sign_in_page.dart';
 import 'pages/auth/sign_up_page.dart';
@@ -64,6 +66,48 @@ class MyApp extends StatelessWidget {
                 path: Routes.profile,
                 pageBuilder: (context, state) =>
                     NoTransitionPage(child: ProfilePage()),
+              ),
+              GoRoute(
+                path: Routes.categoryVegetables,
+                pageBuilder: (context, state) =>
+                     const NoTransitionPage(child: ProductDetailPage(
+                      content: PageContent.contentVegetables, 
+                      title: 'Овощи',)),
+              ),
+              GoRoute(
+                path: Routes.categoryFruits,
+                pageBuilder: (context, state) =>
+                     const NoTransitionPage(child: ProductDetailPage(
+                      content: PageContent.contentFruits, 
+                      title: 'Фрукты',)),
+              ),
+              GoRoute(
+                path: Routes.categoryMeat,
+                pageBuilder: (context, state) =>
+                     const NoTransitionPage(child: ProductDetailPage(
+                      content: PageContent.contentMeat, 
+                      title: 'Мясо',)),
+              ),
+              GoRoute(
+                path: Routes.categoryBread,
+                pageBuilder: (context, state) =>
+                     const NoTransitionPage(child: ProductDetailPage(
+                      content: PageContent.contentBread, 
+                      title: 'Выпечка',)),
+              ),
+              GoRoute(
+                path: Routes.categoryBerries,
+                pageBuilder: (context, state) =>
+                     const NoTransitionPage(child: ProductDetailPage(
+                      content: PageContent.contentBerries, 
+                      title: 'Ягоды',)),
+              ),
+              GoRoute(
+                path: Routes.categoryMilk,
+                pageBuilder: (context, state) =>
+                     const NoTransitionPage(child: ProductDetailPage(
+                      content: PageContent.contentMilk, 
+                      title: 'Молочные продукты',)),
               ),
             ],
           ),

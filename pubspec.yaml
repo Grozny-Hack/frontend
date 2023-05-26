@@ -67,6 +67,12 @@ flutter:
   assets:
     - assets/images/
     - assets/images/categories/
+    - assets/images/vegetables/
+    - assets/images/meat/
+    - assets/images/fruits/
+    - assets/images/milk/
+    - assets/images/bread/
+
     - assets/icons/
     - assets/icons/home_page/
     - assets/images/home_page/

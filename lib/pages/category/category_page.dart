@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:mobile_app/utils/app_routes.dart';
 
 import '../../ui/closeButton.dart';
 import '../../utils/app_colors.dart';
@@ -12,21 +14,16 @@ class CategoriesPage extends StatelessWidget {
       backgroundColor: const Color(0xfff6f5f5),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          const SizedBox(
-            height: 42,
-          ),
-          CloseCircleButton(onTap: () {}),
-          const SizedBox(
-            height: 20,
-          ),
-          const Text(
-            'Категории',
-            style: TextStyle(fontSize: 34, fontWeight: FontWeight.w700),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+          const SizedBox(height: 42,),
+          CloseCircleButton(onTap: (){context.pop();}),
+          const SizedBox(height: 20,),
+
+          const Text('Категории', style: TextStyle(fontSize: 34, fontWeight: FontWeight.w700),),
+          const SizedBox(height: 20,),
+
           Container(
             height: 50,
             decoration: BoxDecoration(
@@ -65,61 +62,29 @@ class CategoriesPage extends StatelessWidget {
           ),
           Row(
             children: const [
-              ProductCard(
-                amount: '43',
-                title: 'Овощи',
-                imagePath: 'assets/images/categories/greenShit.jpg',
-              ),
-              SizedBox(
-                width: 20,
-              ),
-              ProductCard(
-                amount: '32',
-                title: 'Фрукты',
-                imagePath: 'assets/images/categories/fruits.jpg',
-              ),
+              ProductCard(amount: '43', title: 'Овощи', imagePath: 'assets/images/categories/greenShit.jpg', 
+              pageRoute: Routes.categoryVegetables,),
+              SizedBox(width: 20,),
+              ProductCard(amount: '32', title: 'Фрукты', imagePath: 'assets/images/categories/fruits.jpg',
+              pageRoute: Routes.categoryFruits),
             ],
           ),
-          const SizedBox(
-            height: 20,
-          ),
-          Row(
-            children: const [
-              ProductCard(
-                amount: '22',
-                title: 'Выпечка',
-                imagePath: 'assets/images/categories/bread.jpg',
-              ),
-              SizedBox(
-                width: 20,
-              ),
-              ProductCard(
-                amount: '56',
-                title: 'Молочное',
-                imagePath: 'assets/images/categories/milk.jpg',
-              ),
-            ],
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          Row(
-            children: const [
-              ProductCard(
-                amount: '31',
-                title: 'Мясо',
-                imagePath: 'assets/images/categories/meat.jpg',
-              ),
-              SizedBox(
-                width: 20,
-              ),
-              ProductCard(
-                amount: '16',
-                title: 'Ягоды',
-                imagePath: 'assets/images/categories/strawberry.jpg',
-              ),
-            ],
-          ),
+          const SizedBox(height: 20,),
+          Row(children: const [
+            ProductCard(amount: '22', title: 'Выпечка', imagePath: 'assets/images/categories/bread.jpg',
+            pageRoute: Routes.categoryBread),
+            SizedBox(width: 20,),
+            ProductCard(amount: '56', title: 'Молочное', imagePath: 'assets/images/categories/milk.jpg',
+            pageRoute: Routes.categoryMilk),
+          ],),
+          const SizedBox(height: 20,),
+          Row(children: const [
+            ProductCard(amount: '31', title: 'Мясо', imagePath: 'assets/images/categories/meat.jpg',
+            pageRoute: Routes.categoryMeat),
+            SizedBox(width: 20,),
+            ProductCard(amount: '16', title: 'Ягоды', imagePath: 'assets/images/categories/strawberry.jpg',
+            pageRoute: Routes.categoryBerries),
+          ],),
         ]),
       ),
     );
@@ -127,15 +92,17 @@ class CategoriesPage extends StatelessWidget {
 }
 
 class ProductCard extends StatelessWidget {
-  const ProductCard(
-      {super.key,
-      this.title = '',
-      this.amount = '',
-      this.imagePath = 'assets/images/categories/greenShit.jpg'});
+  const ProductCard({
+    super.key,
+    this.title='', 
+    this.amount='',
+    this.imagePath='assets/images/categories/greenShit.jpg',
+    this.pageRoute=Routes.home});
 
   final String title;
   final String amount;
   final String imagePath;
+  final String pageRoute;
 
   @override
   Widget build(BuildContext context) {
@@ -144,10 +111,10 @@ class ProductCard extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () {},
+          onTap: (){context.push(pageRoute);},
           child: Container(
             // height: 300,
-            width: (MediaQuery.of(context).size.width - 60) / 2, //177,
+            width: (MediaQuery.of(context).size.width - 60) / 2,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
               border: Border.all(color: const Color(0xffD9D0E3)),
