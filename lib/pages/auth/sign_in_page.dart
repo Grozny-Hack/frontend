@@ -50,7 +50,7 @@ class SignInPage extends StatelessWidget {
                     Row(
                       children: [
                         Text(
-                          'Логин',
+                          'Email',
                           style: TextStyle(
                             fontFamily: 'Nunito',
                             fontSize: 18,

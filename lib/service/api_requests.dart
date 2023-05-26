@@ -2,6 +2,7 @@
 
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../models/AuthModel.dart';
 import 'api_service.dart';
 
 class AuthService {
@@ -18,19 +19,24 @@ class AuthService {
   }
 
   Future<String> loginUser({
-    required String username,
+    required String email,
     required String password,
   }) async {
     dynamic data = await APIService.postRequest(
-      request: 'api/login',
-      data: {'username': username, 'password': password},
+      request: 'api/auth/login',
+      data: {
+        'email': email,
+        'password': password,
+      },
     );
+    print(data);
 
     try {
-      if (data != '' && data['jwt'] != '') {
-        await prefs.setString('token', data['jwt']);
-        _token = data['jwt'];
-        return 'Token: ${data['jwt']}';
+      if (data != '' && data['payload'] != {}) {
+        String accessTokenJson = AuthJson.fromJson(data).payload.accessToken;
+        await prefs.setString('token', accessTokenJson);
+        _token = accessTokenJson;
+        return 'Token: ${accessTokenJson}';
       }
     } catch (e) {
       return 'Такого пользователя не существует или введен неправильный пароль.';
@@ -48,22 +54,20 @@ class AuthService {
     String description = '',
   }) async {
     dynamic data = await APIService.postRequest(
-      request: 'api/register',
+      request: 'api/auth/registration',
       data: {
-        'username': username,
         'email': email,
         'password': password,
-        'first_name': '123',
-        'last_name': '123',
-        'description': '123'
       },
     );
 
     try {
-      if (data != '' && data['username'] != '') {
-        await prefs.setString('token', data['username']);
-        _token = data['username'];
-        return 'Token: ${data['username']}';
+      if (data != '' && data['payload'] != '') {
+        String accessTokenJson = AuthJson.fromJson(data).payload.accessToken;
+
+        await prefs.setString('token', accessTokenJson);
+        _token = accessTokenJson;
+        return 'Token: ${accessTokenJson}';
       }
     } catch (e) {
       print(e);
@@ -77,7 +81,6 @@ class AuthService {
     _token = '';
     await prefs.setString('token', _token);
   }
-
 
   static Future<String> askNeuralNetwork({
     required String message,

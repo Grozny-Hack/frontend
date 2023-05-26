@@ -63,26 +63,6 @@ class SignUpPage extends StatelessWidget {
                       height: 5,
                     ),
                     PrimaryTextField(
-                      controller: _textFormNameController,
-                      labelText: '',
-                      labelStyle: TextStyle(),
-                      validator: (e) {},
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          'Логин',
-                          style: TextStyle(
-                            fontFamily: 'Nunito',
-                            fontSize: 18,
-                          ),
-                        ),
-                      ],
-                    ),
-                    PrimaryTextField(
                       controller: _textFormLoginController,
                       labelText: '',
                       labelStyle: TextStyle(),
