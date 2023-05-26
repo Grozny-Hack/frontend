@@ -61,8 +61,13 @@ class CategoriesPage extends StatelessWidget {
             ProductCard(amount: '22', title: 'Выпечка', imagePath: 'assets/images/categories/bread.jpg',),
             SizedBox(width: 20,),
             ProductCard(amount: '56', title: 'Молочное', imagePath: 'assets/images/categories/milk.jpg',),
-          ],)
-          
+          ],),
+          const SizedBox(height: 20,),
+          Row(children: const [
+            ProductCard(amount: '31', title: 'Мясо', imagePath: 'assets/images/categories/meat.jpg',),
+            SizedBox(width: 20,),
+            ProductCard(amount: '16', title: 'Ягоды', imagePath: 'assets/images/categories/strawberry.jpg',),
+          ],),
         ]),
       ),
 
