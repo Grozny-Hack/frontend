@@ -4,11 +4,11 @@ part of 'sign_in_bloc.dart';
 abstract class SignInEvent {}
 
 class SignInAuth extends SignInEvent {
-  final String login;
+  final String email;
   final String password;
 
   SignInAuth({
-    required this.login,
+    required this.email,
     required this.password,
   });
 }

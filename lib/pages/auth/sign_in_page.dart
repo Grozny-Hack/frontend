@@ -50,7 +50,7 @@ class SignInPage extends StatelessWidget {
                     Row(
                       children: [
                         Text(
-                          'Логин',
+                          'Email',
                           style: TextStyle(
                             fontFamily: 'Nunito',
                             fontSize: 18,
@@ -107,7 +107,7 @@ class SignInPage extends StatelessWidget {
                               // signIn
                               context.read<SignInBloc>().add(
                                     SignInAuth(
-                                      login: _textFormLoginController.text,
+                                      email: _textFormLoginController.text,
                                       password:
                                           _textFormPasswordController.text,
                                     ),

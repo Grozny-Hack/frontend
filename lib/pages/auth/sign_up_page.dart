@@ -74,23 +74,6 @@ class SignUpPage extends StatelessWidget {
                     Row(
                       children: [
                         Text(
-                          'Логин',
-                          style: TextStyle(
-                            fontFamily: 'Nunito',
-                            fontSize: 18,
-                          ),
-                        ),
-                      ],
-                    ),
-                    PrimaryTextField(
-                      controller: _textFormLoginController,
-                      labelText: '',
-                      labelStyle: TextStyle(),
-                      validator: (e) {},
-                    ),
-                    Row(
-                      children: [
-                        Text(
                           'Пароль',
                           style: TextStyle(
                             fontFamily: 'Nunito',
